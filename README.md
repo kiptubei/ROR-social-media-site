@@ -63,7 +63,16 @@ TBA
 
 ## Authors
 
-TBA
+👤 **Mark James Kiptubei**
+
+- Github: [@kiptubei](https://github.com/kiptubei)
+- Linkedin: [kiptubei](https://www.linkedin.com/in/mark-james-k-aa875829/)
+
+👤 **Adedeko Olawale**
+
+- Github: [@OlawaleJoseph](https://github.com/OlawaleJoseph)
+- Twitter: [@javanode123](https://twitter.com/javanode123)
+- Linkedin: [olawale-adedeko](http://www.linkedin.com/in/olawale-adedeko)
 
 ## 🤝 Contributing
 
