@@ -1,5 +1,6 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
+  <%= display_friend_invite_button(@user) %>
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">

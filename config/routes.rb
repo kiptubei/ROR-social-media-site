@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'posts#index'
 
+  put 'users/:id/add_friend', to: 'users#invite'
   devise_for :users
 
   resources :users, only: [:index, :show]
