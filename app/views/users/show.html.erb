@@ -1,6 +1,16 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
   <%= display_friend_invite_button(@user) %>
+  <div>
+  <h3>Friend Requests</h3>
+    <% current_user.friend_requests.each do |friend| %>
+    <div class='users-section'>
+      <span> <%= friend.name %> sent you a friend request</span>
+      <span class='profile-link'> <%= link_to 'Accept', "/users/#{friend.id}/confirm_friend", class: 'profile-link', method: :put %> </span>
+      <span> <%= link_to '| Reject', "#", class: 'profile-link' %> </span>
+      </div>
+    <% end %>
+  </div>
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">

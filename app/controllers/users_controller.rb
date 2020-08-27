@@ -23,4 +23,11 @@ class UsersController < ApplicationController
       flash[:alert] = "You have a pending friend request"
     end
   end
+
+  def confirm_friend
+    user = User.find(params[:id])
+    current_user.confirm_friend(user)
+    flash[:notice] = "Frien request accepted"
+    redirect_to root_path
+  end
 end

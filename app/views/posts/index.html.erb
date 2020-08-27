@@ -14,7 +14,7 @@
     Recent posts
   </h3>
   <ul class="posts">
-  <% if @timeline.nil? %>
+  <% if @timeline_posts.empty? %>
     <p> You have no posts </p>
   <% else %>
     <%= render @timeline_posts %>
