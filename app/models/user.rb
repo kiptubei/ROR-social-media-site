@@ -41,11 +41,13 @@ class User < ApplicationRecord
 
   def check_friend_request(user)
     return true if friend_requests.include?(user) || pending_friends.include?(user)
+
     false
   end
 
   def check_friendship_status(user)
     return true if friend?(user) || check_friend_request(user)
+
     false
   end
 end

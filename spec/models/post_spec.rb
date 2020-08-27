@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-    let(:user) { User.create(name: 'User1', email: 'user1@gmail.com', password: 'password') }
+  let(:user) { User.create(name: 'User1', email: 'user1@gmail.com', password: 'password') }
   subject { Post.new(user_id: user.id, content: 'Test post') }
 
   context 'Validation' do

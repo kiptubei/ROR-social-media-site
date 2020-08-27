@@ -23,12 +23,12 @@ RSpec.describe User, type: :model do
     end
   end
 
-  context 'Users' do
+  describe 'Users' do
     before(:each) do
       @user1 = User.create(name: 'User1', email: 'user1@gmail.com', password: 'password')
       @user2 = User.create(name: 'User2', email: 'user2@gmail.com', password: 'password')
     end
-    
+
     context 'Validations' do
       it 'should return empty friends' do
         expect(@user1.friends.empty?).to eq(true)
@@ -57,7 +57,7 @@ RSpec.describe User, type: :model do
       end
     end
 
-    context "Associations" do
+    context 'Associations' do
       it 'Should have friendships' do
         expect(@user1.friendships).to_not be_nil
       end
@@ -71,6 +71,5 @@ RSpec.describe User, type: :model do
         expect(@user2.inverse_friendships).to_not be_nil
       end
     end
-    
   end
 end
