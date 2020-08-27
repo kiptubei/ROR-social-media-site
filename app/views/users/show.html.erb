@@ -7,7 +7,7 @@
     <div class='users-section'>
       <span> <%= friend.name %> sent you a friend request</span>
       <span class='profile-link'> <%= link_to 'Accept', "/users/#{friend.id}/confirm_friend", class: 'profile-link', method: :put %> </span>
-      <span> <%= link_to '| Reject', "#", class: 'profile-link' %> </span>
+      <span> <%= link_to '| Reject', "/users/#{friend.id}/confirm_friend", class: 'profile-link', method: :delete %> </span>
       </div>
     <% end %>
   </div>

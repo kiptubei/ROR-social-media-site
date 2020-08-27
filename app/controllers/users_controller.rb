@@ -27,7 +27,14 @@ class UsersController < ApplicationController
   def confirm_friend
     user = User.find(params[:id])
     current_user.confirm_friend(user)
-    flash[:notice] = 'Frien request accepted'
+    flash[:notice] = 'Friend request accepted'
+    redirect_to root_path
+  end
+
+  def reject_friend
+    user = User.find(params[:id])
+    current_user.reject_friend(user)
+    flash[:notice] = 'Friend request rejected'
     redirect_to root_path
   end
 end
