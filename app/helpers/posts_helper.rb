@@ -1,5 +1,5 @@
 module PostsHelper
-  def get_timeline_posts(timeline_posts)
+  def get_timeline_posts(_timeline_posts)
     if @timeline_posts.empty?
       '<p> You have no posts </p>'.html_safe
     else

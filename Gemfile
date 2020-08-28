@@ -46,6 +46,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 4.0'
 end
 
