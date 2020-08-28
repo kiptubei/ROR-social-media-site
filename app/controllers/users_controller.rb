@@ -28,6 +28,7 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     current_user.confirm_friend(user)
     flash[:notice] = 'Friend request accepted'
+    current_user.friendships.create(user_id: current_user.id, friend_id: user.id, confirmed: true)
     redirect_to root_path
   end
 
