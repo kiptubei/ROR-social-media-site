@@ -1,6 +1,8 @@
-# Scaffold for social media app with Ruby on Rails
+# Social media app with Ruby on Rails
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+> This project aims to build a fully functioning Social Media Site entirely usin Ruby-on-Rails.
+> Users can typically perform all functions they could on other popular sites except upload images and
+> gif. I.E Sign-up ,Make and Recieve Friend requests, Write Posts, View others' posts,Like and Dislike.
 
 ## Built With
 
@@ -11,7 +13,6 @@
 
 TBA
 
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -21,10 +22,11 @@ To get a local copy up and running follow these simple example steps.
 Ruby: 2.7.1
 Rails: 5.2.4
 Postgres: >=9.5
+Gravatar
 
 ### Setup
 
-Instal gems with:
+Install gems with:
 
 ```
 bundle install
@@ -36,8 +38,6 @@ Setup database with:
    rails db:create
    rails db:migrate
 ```
-
-
 
 ### Usage
 
@@ -55,11 +55,18 @@ Open `http://localhost:3000/` in your browser.
     rpsec --format documentation
 ```
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
-
 ### Deployment
 
-TBA
+> If you wish to deploy this application on your own server instance such as on Heroku
+> Clone it on
+
+```
+git clone https://github.com/kiptubei/ROR-social-media-site.git
+```
+
+> Deploy it to your server instance using the following instructions
+
+- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails5)
 
 ## Authors
 
@@ -78,7 +85,7 @@ TBA
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/kiptubei/ROR-social-media-site/issues/).
 
 ## Show your support
 
@@ -86,9 +93,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+- Microverse
+- google
+- Stack-overflow
 
 ## 📝 License
 
-TBA
-
+- [MIT License](https://opensource.org/licenses/MIT)
