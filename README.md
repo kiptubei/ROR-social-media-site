@@ -1,8 +1,7 @@
 # Social media app with Ruby on Rails
 
 > This project aims to build a fully functioning Social Media Site entirely usin Ruby-on-Rails.
-> Users can typically perform all functions they could on other popular sites except upload images and
-> gif. I.E Sign-up ,Make and Recieve Friend requests, Write Posts, View others' posts,Like and Dislike.
+> Users can typically perform all functions they could on other popular sites except upload images and gif. I.E Sign-up ,Make and Recieve Friend requests, Write Posts, View others' posts,Like and Dislike.
 
 ## Built With
 
@@ -11,7 +10,7 @@
 
 ## Live Demo
 
- [Demo Link](https://sleepy-brushlands-18015.herokuapp.com/)
+[Demo Link](https://sleepy-brushlands-18015.herokuapp.com/)
 
 ## Getting Started
 
